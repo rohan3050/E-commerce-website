@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- style.css  -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <!-- fontawesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+        integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ=="
+        crossorigin="anonymous" />
+
+    <title>E-Commerce</title>
+</head>
+
+<body id="top">
+    <!-- ==============header menu section starts here============== -->
+    <section class="header_menu" id="header_menu">
+        <div class="container-fluid px-0 shadow">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light py-3  ">
+                <a class="navbar-brand pl-5" href="index.html">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMkAAABTCAMAAAAC5dMSAAAAM1BMVEX///8AAAA/Pz9/f3+/v7/v7+8PDw+fn5/f399fX18fHx/Pz88vLy+Pj49vb2+vr69PT0/y/mSPAAAE/UlEQVR4nO2bbbttIBCG9UYSe/3/X3v0PkWIrOVcl+fL3ixq7qkpTTRNdU3YSh0MGE/zH3vUuJ+G+tXeIIys1AFFSDHYo8b9RH9p4GHtkNzWJr7ei0oLtV5fktxkAPkCCbzA/o9fkry+QSIIISiQzEeku4tE1XVVh+OEKrFwbXe97kCCm8raItGqOwq/JAc09xhu/uMmKFz3c/2BV63uRpIv6yV5nl6S5+kleZ5ekufpJXmeXpIvaKDj/ORJjz5nHiEZcKyJdGlaZMJ5DSHDNWuEt1HwA1xCNqz7+IWg6P9qkYRlONCnA0u+zdUrDSsSJehjCc6DBScjbVyEiDArkyDUksBSQALqGeH5QDImHEpyNzl2gWRm8V2lgAT5vsIjix0J+6BV7TXLJRKEelZO0rqmjE22JEyijPpbSZAsJ0HTarFkBwShMWNfHRLrqSISZPq8WCPpt+raHMMuk5jiy0h0VSQ5qUn+NqtqWdbGGiSinERFL08HKLLSTqlI1sYaJHpQASQjTcSWJLNzF+zKyi46I8nf2EfAW41SSKIvolNUPI5J1vJxC/p+2Y1I0iStKYhFkbMR9GdI0uJZOQlaTn4zyQAv8O6HASVrk8RzAY1I+jT1zNdIliLxnA8cAjtivnudJeGxDYURnyEB7pHr9W/kks+SQNurkcBxAxogMufrkIDeW40EBE/k+9hr/wNJfFPQJ7rqISQiHrRiG3/TJifjBEdrkinrj8hiECf5Z/uzJHDs6kpI4KWCxSQ/GbvgfDIUzCcYTn806aNwDgTPvdBNWSPPzvEQpG0K5ngM7J3SaIvmeL/chf1xIwF0hiR57uoLSVweQj2PxCTxc5dpFTbBujaWwIUka+JNwbOwqsW6XlmakMRrFklGctuz8Ir0orEg4mdpN3+aJQlbyapA3bo+aXk5CRPOvQlJskBJJTZArpOY3lxGoko0PT4laTIpIqPNnNdVEhuChSRNb/8uSLZyK9sZr2skrSu8lISxDMkGyk7q7hIJ9jneUhKnJUnD1stq99LcF0hkZhq+SLKeF8a7mw9nSeQUhV9Vkob3CQs+sO9whCTZP+nJSNMZ6vD+yRTf1x3YP0mcdoXkRxpoRwhdOC2nB5MU6iV5nl6S5+kleZ5ekufpJXmeXpLn6RoJpUN0VPed/zJdIdHvLgm7CDKbqO6ImDQQRzYnaVZUwq2m1Hm3HlEfDDH/jQc1d5Cd1wjqkrj9X22STySE7M/HLCUBiX9lhYD6qL+U2lKlfu3g0OtpqyQyzYKuKjhKJdlw7/bNFVZPVF6Xe8tphwAJ1plHc6/O/w6BxJigr1RpyK6HjuWHDAvFHFTIX2PtSmrfi0J6M1MlF4knMftXjoRodmqd0Pq3nEyWgPoviEazWR9CLn3BZUPnSBDMCVKz+aDMSF+v8SRcdUBmnTD6QDAkrfBlS2PTV0nCAbVJW0Ci8iNCJnFiPmhWF3/cjvR8qxSwbIUmQLjfTiJN/JqvrRgyISpD7yIj6DPWGtMV3VAhnOF4iMrGcbgXkQzHgiqKeLXV9CHYZlSVdRNRHcNF/OyfqQEkvbuZ+Yr/HEkTxoYGfnSndTDilU7OZ9G463c+/ChMVPIXw4gPLsBzrW58Mp8I9nmS+2X2zVySm+seCmZGAo2CJMLgctt+hoTJH5LM1c+uDUccPLtw29KD7VIctLy7yfZVZm5joecOx9N1qf4BfrcvVuFxr/4AAAAASUVORK5CYII=" class="img img-fluid" width="120px" alt="logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item ">
+                            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="product.html">Product</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="category.html">Category</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact Us</a>
+                        </li>
+                        <!-- <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                Dropdown
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li> -->
+                    </ul>
+                    <div class="search mr-3">
+                        <a href="search.html" class="btn btn-sm btn-outline-primary">
+                            Search
+                        </a>
+                    </div>
+                    <div class="cart">
+                        <a href="cart.html">
+                            <i class="fas fa-shopping-cart fa-2x"></i>
+                            <span class="badge badge-pill badge-primary">2</span>
+                        </a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </section>
+    <!-- ==============header menu section ends here============== -->
+
+    <!-- ==============category starts here============== -->
+    <section class="products py-5 my-5 bg-light" id="products">
+        <div class="container ">
+            <div class="section_title text-center mb-5">
+                <h1 class="text-capitalize">Categories</h1>
+            </div>
+            <div class="row mb-5">
+                <div class="col-md-4 col-12">
+                    <div class="single_product shadow text-center p-1">
+                        <div class="product_img">
+                            <a href="product.html"><img src="https://rukminim2.flixcart.com/image/416/416/xif0q/mobile/z/b/d/-original-imagpgx48f4szdvf.jpeg?q=70" class="img img-fluid rounded"
+                                    alt=""></a>
+                        </div>
+                        <div class="product-caption my-3">
+                            <h4><a href="product_detail-Google pixel 7 pro.html">Google Pixel 7 Pro</a></h4>
+                        </div>
+                        <div class="mt-3">
+                            <p>
+                               <strong><em>new mobile added with most advanced technology.</em></strong> 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-12">
+                    <div class="single_product shadow text-center p-1 mt-small-5 mb-small-5">
+                        <div class="product_img">
+                            <a href="product.html"><img src="https://rukminim2.flixcart.com/image/416/416/l5h2xe80/mobile/5/x/r/-original-imagg4xza5rehdqv.jpeg?q=70" class="img img-fluid rounded"
+                                    alt=""></a>
+                            <div class="new_product">
+                                <span class="badge py-2 px-3 badge-pill badge-danger">New</span>
+                            </div>
+                        </div>
+                        <div class="product-caption my-3">
+                            <h4><a href="product detail nothing phone 1.html">Nothing phone(1)</a></h4>
+                        </div>
+                        <div class="mt-3">
+                            <p>
+                                <strong><em>NEW and emerging company nothing provide you futuristic tech.</em></strong>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-12">
+                    <div class="single_product shadow text-center p-1">
+                        <div class="product_img">
+                            <a href="product.html"><img src="https://m.media-amazon.com/images/I/51DmOWr3rnL._SX522_.jpg" class="img img-fluid rounded"
+                                    alt=""></a>
+                            <div class="new_product">
+                                <span class="badge py-2 px-3 badge-pill badge-danger">best seller</span>
+                            </div>
+                        </div>
+                        <div class="product-caption my-3">
+                            <h4><a href="product_detail_hp pavilion 14.html">HP Pavilion</a></h4>
+                        </div>
+                        <div class="mt-3">
+                            <p>
+                                <strong><em>HP makes the most satisfying product at the lowest price.</em></strong> 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-12">
+                    <div class="single_product shadow text-center p-1">
+                        <div class="product_img">
+                            <a href="product.html"><img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSkocOUE60lxUWFatjcv-oCwT8kuPfXeHp9k6v7xh4p74ukUeL0T5RSQALZqhJeb1K3we1ZVt2Qb7Zf6ePwsxVIB-byGPkLOZ1gL65AT1m0ECcFqQD3lYHu&usqp=CAE" class="img img-fluid rounded"
+                                    alt=""></a>
+                            <div class="new_product">
+                                <span class="badge py-2 px-3 badge-pill badge-danger">Exclusive</span>
+                            </div>
+                        </div>
+                        <div class="product-caption my-3">
+                            <h4><a href="product_detail_fujitsu uh x.html">Fujitsu UH X</a></h4>
+                        </div>
+                        <div class="mt-3">
+                            <p>
+                                <strong><em>Fujistu is a electronic product manufactoring company originated from japan.provide you the best technology and aspire to become tech giant  </em></strong>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-12">
+                    <div class="single_product shadow text-center p-1 mt-small-5 mb-small-5">
+                        <div class="product_img">
+                            <a href="product.html"><img src="https://image-us.samsung.com/us/smartphones/galaxy-s22-ultra/configurator/B0-02-group-kv-basic-configurator-MB-720x540.jpg" class="img img-fluid rounded"
+                                    alt=""></a>
+                            <div class="new_product">
+                                <span class="badge py-2 px-3 badge-pill badge-danger">New</span>
+                            </div>
+                        </div>
+                        <div class="product-caption my-3">
+                            <h4><a href="product_detail-S22Ultra.html">Samsung S22 ultra</a></h4>
+                        </div>
+                        <div class="mt-3">
+                            <p>
+                                <strong><em>HERE You can zoom things upto 100x (camera is the main attraction) . If you are a camera lover then you should buy this product.</em></strong>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-12">
+                    <div class="single_product shadow text-center p-1">
+                        <div class="product_img">
+                            <a href="product.html"><img src="https://images.samsung.com/is/image/samsung/p6pim/in/2108/gallery/in-galaxy-watch4-classic-399241-sm-r895fzkainu-481181864?$1300_1038_PNG$" class="img img-fluid rounded"
+                                    alt=""></a>
+                        </div>
+                        <div class="product-caption my-3">
+                            <h4><a href="product_detail_noise color fit 1 pro4.html"></a></h4>
+                        </div>
+                        <div class="mt-3">
+                            <p>
+                                <strong><em>This is smart watch meant for the person who want intelligent device which can track all day  daily activity to adapt a better life style.</em></strong> 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- ==============category ends here============== -->
+
+   <!-- ==============footer starts here============== -->
+  <section class="footer_section pt-5 pb-2" id="footer_section">
+    <footer>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-3 col-6 pl-5 pl-small-15">
+            <div class="footer_title">
+              <a href="index.html"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMkAAABTCAMAAAAC5dMSAAAAM1BMVEX///8AAAA/Pz9/f3+/v7/v7+8PDw+fn5/f399fX18fHx/Pz88vLy+Pj49vb2+vr69PT0/y/mSPAAAE/UlEQVR4nO2bbbttIBCG9UYSe/3/X3v0PkWIrOVcl+fL3ixq7qkpTTRNdU3YSh0MGE/zH3vUuJ+G+tXeIIys1AFFSDHYo8b9RH9p4GHtkNzWJr7ei0oLtV5fktxkAPkCCbzA/o9fkry+QSIIISiQzEeku4tE1XVVh+OEKrFwbXe97kCCm8raItGqOwq/JAc09xhu/uMmKFz3c/2BV63uRpIv6yV5nl6S5+kleZ5ekufpJXmeXpIvaKDj/ORJjz5nHiEZcKyJdGlaZMJ5DSHDNWuEt1HwA1xCNqz7+IWg6P9qkYRlONCnA0u+zdUrDSsSJehjCc6DBScjbVyEiDArkyDUksBSQALqGeH5QDImHEpyNzl2gWRm8V2lgAT5vsIjix0J+6BV7TXLJRKEelZO0rqmjE22JEyijPpbSZAsJ0HTarFkBwShMWNfHRLrqSISZPq8WCPpt+raHMMuk5jiy0h0VSQ5qUn+NqtqWdbGGiSinERFL08HKLLSTqlI1sYaJHpQASQjTcSWJLNzF+zKyi46I8nf2EfAW41SSKIvolNUPI5J1vJxC/p+2Y1I0iStKYhFkbMR9GdI0uJZOQlaTn4zyQAv8O6HASVrk8RzAY1I+jT1zNdIliLxnA8cAjtivnudJeGxDYURnyEB7pHr9W/kks+SQNurkcBxAxogMufrkIDeW40EBE/k+9hr/wNJfFPQJ7rqISQiHrRiG3/TJifjBEdrkinrj8hiECf5Z/uzJHDs6kpI4KWCxSQ/GbvgfDIUzCcYTn806aNwDgTPvdBNWSPPzvEQpG0K5ngM7J3SaIvmeL/chf1xIwF0hiR57uoLSVweQj2PxCTxc5dpFTbBujaWwIUka+JNwbOwqsW6XlmakMRrFklGctuz8Ir0orEg4mdpN3+aJQlbyapA3bo+aXk5CRPOvQlJskBJJTZArpOY3lxGoko0PT4laTIpIqPNnNdVEhuChSRNb/8uSLZyK9sZr2skrSu8lISxDMkGyk7q7hIJ9jneUhKnJUnD1stq99LcF0hkZhq+SLKeF8a7mw9nSeQUhV9Vkob3CQs+sO9whCTZP+nJSNMZ6vD+yRTf1x3YP0mcdoXkRxpoRwhdOC2nB5MU6iV5nl6S5+kleZ5ekufpJXmeXpLn6RoJpUN0VPed/zJdIdHvLgm7CDKbqO6ImDQQRzYnaVZUwq2m1Hm3HlEfDDH/jQc1d5Cd1wjqkrj9X22STySE7M/HLCUBiX9lhYD6qL+U2lKlfu3g0OtpqyQyzYKuKjhKJdlw7/bNFVZPVF6Xe8tphwAJ1plHc6/O/w6BxJigr1RpyK6HjuWHDAvFHFTIX2PtSmrfi0J6M1MlF4knMftXjoRodmqd0Pq3nEyWgPoviEazWR9CLn3BZUPnSBDMCVKz+aDMSF+v8SRcdUBmnTD6QDAkrfBlS2PTV0nCAbVJW0Ci8iNCJnFiPmhWF3/cjvR8qxSwbIUmQLjfTiJN/JqvrRgyISpD7yIj6DPWGtMV3VAhnOF4iMrGcbgXkQzHgiqKeLXV9CHYZlSVdRNRHcNF/OyfqQEkvbuZ+Yr/HEkTxoYGfnSndTDilU7OZ9G463c+/ChMVPIXw4gPLsBzrW58Mp8I9nmS+2X2zVySm+seCmZGAo2CJMLgctt+hoTJH5LM1c+uDUccPLtw29KD7VIctLy7yfZVZm5joecOx9N1qf4BfrcvVuFxr/4AAAAASUVORK5CYII=" width="150px" class="img img-fluid" alt="logo"></a>
+            </div>
+            <div>
+              We pride ourselves on providing a diverse and extensive product catalog.
+            </div>
+          </div>
+          <div class="col-md-3 col-6">
+            <div class="footer_title pt-3 mb-3">
+              <h3>Quick Links</h3>
+            </div>
+            <div class="footer_links">
+              <ul>
+                <li><a href="about.html">About</a></li>
+                <li><a href="javascript:;">Offers & Discounts</a></li>
+                <li><a href="javascript:;">Get Coupon</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-3 col-6">
+            <div class="footer_title pt-3 mb-3">
+              <h3>New Products</h3>
+            </div>
+            <div class="footer_links">
+              <ul>
+                <li><a href="product_laptop.html">Latest Laptops</a></li>
+                <li><a href="product_phones.html">Latest Mobiles</a></li>
+                <li><a href="product_watches.html">Latest Watches</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-3 col-6">
+            <div class="footer_title pt-3 mb-3">
+              <h3>Support</h3>
+            </div>
+            <div class="footer_links">
+              <ul>
+                <li><a href="javascript:;">Frequently Asked Questions</a></li>
+                <li><a href="javascript:;">Terms & Conditions</a></li>
+                <li><a href="javascript:;">Report a Payment Issue</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="border-top">
+        <h6 class="text-center mt-3">Copyright ©2022 All rights reserved
+        </h6>
+      </div>
+    </footer>
+  </section>
+  <div class="backtop">
+    <a id="button" href="#top" class="btn btn-lg btn-outline-danger" role="button">
+      <i class="fas fa-chevron-up text-dark"></i>
+    </a>
+  </div>
+  <!-- ==============footer ends here============== -->
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

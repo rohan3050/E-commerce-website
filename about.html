@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- style.css  -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <!-- fontawesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+        integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ=="
+        crossorigin="anonymous" />
+
+    <title>E-Commerce</title>
+</head>
+
+<body id="top">
+    <!-- ==============header menu section starts here============== -->
+    <section class="header_menu" id="header_menu">
+        <div class="container-fluid px-0 shadow">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light py-3  ">
+                <a class="navbar-brand pl-5" href="javascript:;">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMkAAABTCAMAAAAC5dMSAAAAM1BMVEX///8AAAA/Pz9/f3+/v7/v7+8PDw+fn5/f399fX18fHx/Pz88vLy+Pj49vb2+vr69PT0/y/mSPAAAE/UlEQVR4nO2bbbttIBCG9UYSe/3/X3v0PkWIrOVcl+fL3ixq7qkpTTRNdU3YSh0MGE/zH3vUuJ+G+tXeIIys1AFFSDHYo8b9RH9p4GHtkNzWJr7ei0oLtV5fktxkAPkCCbzA/o9fkry+QSIIISiQzEeku4tE1XVVh+OEKrFwbXe97kCCm8raItGqOwq/JAc09xhu/uMmKFz3c/2BV63uRpIv6yV5nl6S5+kleZ5ekufpJXmeXpIvaKDj/ORJjz5nHiEZcKyJdGlaZMJ5DSHDNWuEt1HwA1xCNqz7+IWg6P9qkYRlONCnA0u+zdUrDSsSJehjCc6DBScjbVyEiDArkyDUksBSQALqGeH5QDImHEpyNzl2gWRm8V2lgAT5vsIjix0J+6BV7TXLJRKEelZO0rqmjE22JEyijPpbSZAsJ0HTarFkBwShMWNfHRLrqSISZPq8WCPpt+raHMMuk5jiy0h0VSQ5qUn+NqtqWdbGGiSinERFL08HKLLSTqlI1sYaJHpQASQjTcSWJLNzF+zKyi46I8nf2EfAW41SSKIvolNUPI5J1vJxC/p+2Y1I0iStKYhFkbMR9GdI0uJZOQlaTn4zyQAv8O6HASVrk8RzAY1I+jT1zNdIliLxnA8cAjtivnudJeGxDYURnyEB7pHr9W/kks+SQNurkcBxAxogMufrkIDeW40EBE/k+9hr/wNJfFPQJ7rqISQiHrRiG3/TJifjBEdrkinrj8hiECf5Z/uzJHDs6kpI4KWCxSQ/GbvgfDIUzCcYTn806aNwDgTPvdBNWSPPzvEQpG0K5ngM7J3SaIvmeL/chf1xIwF0hiR57uoLSVweQj2PxCTxc5dpFTbBujaWwIUka+JNwbOwqsW6XlmakMRrFklGctuz8Ir0orEg4mdpN3+aJQlbyapA3bo+aXk5CRPOvQlJskBJJTZArpOY3lxGoko0PT4laTIpIqPNnNdVEhuChSRNb/8uSLZyK9sZr2skrSu8lISxDMkGyk7q7hIJ9jneUhKnJUnD1stq99LcF0hkZhq+SLKeF8a7mw9nSeQUhV9Vkob3CQs+sO9whCTZP+nJSNMZ6vD+yRTf1x3YP0mcdoXkRxpoRwhdOC2nB5MU6iV5nl6S5+kleZ5ekufpJXmeXpLn6RoJpUN0VPed/zJdIdHvLgm7CDKbqO6ImDQQRzYnaVZUwq2m1Hm3HlEfDDH/jQc1d5Cd1wjqkrj9X22STySE7M/HLCUBiX9lhYD6qL+U2lKlfu3g0OtpqyQyzYKuKjhKJdlw7/bNFVZPVF6Xe8tphwAJ1plHc6/O/w6BxJigr1RpyK6HjuWHDAvFHFTIX2PtSmrfi0J6M1MlF4knMftXjoRodmqd0Pq3nEyWgPoviEazWR9CLn3BZUPnSBDMCVKz+aDMSF+v8SRcdUBmnTD6QDAkrfBlS2PTV0nCAbVJW0Ci8iNCJnFiPmhWF3/cjvR8qxSwbIUmQLjfTiJN/JqvrRgyISpD7yIj6DPWGtMV3VAhnOF4iMrGcbgXkQzHgiqKeLXV9CHYZlSVdRNRHcNF/OyfqQEkvbuZ+Yr/HEkTxoYGfnSndTDilU7OZ9G463c+/ChMVPIXw4gPLsBzrW58Mp8I9nmS+2X2zVySm+seCmZGAo2CJMLgctt+hoTJH5LM1c+uDUccPLtw29KD7VIctLy7yfZVZm5joecOx9N1qf4BfrcvVuFxr/4AAAAASUVORK5CYII=" class="img img-fluid" width="120px" alt="logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item ">
+                            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="product.html">Product</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="category.html">Category</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact Us</a>
+                        </li>
+                        <!-- <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                Dropdown
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li> -->
+                    </ul>
+                    <div class="search mr-3">
+                        <a href="search.html" class="btn btn-sm btn-outline-primary">
+                            Search
+                        </a>
+                    </div>
+                    <div class="cart">
+                        <a href="cart.html">
+                            <i class="fas fa-shopping-cart fa-2x"></i>
+                            <span class="badge badge-pill badge-primary">24</span>
+                        </a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </section>
+    <!-- ==============header menu section ends here============== -->
+
+    <!-- ==============about starts here============== -->
+    <section class="about py-5 my-5" id="about">
+        <div class="container ">
+            <div class="section_title text-center mb-5">
+                <h1 class="text-capitalize">About Us</h1>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <img src="https://media.istockphoto.com/id/1163589059/photo/about-us.jpg?s=612x612&w=0&k=20&c=xiAumkYaKpQc3xepslDpn-lFhYPae6ivX_rRkgSXJgs=" class="img img-fluid rounded shadow-lg"
+                                alt="about us image">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="title">
+                                <h3>Our Mission</h3>
+                            </div>
+                            <div class="about_text mt-sm-5">
+                                <p>
+                                    Our primary focus is to ensure the utmost satisfaction of 
+                                    our customers. We strive to exceed their expectations by 
+                                    providing high-quality products, excellent service, and 
+                                    a seamless shopping experience.
+                                </p>
+                                <p>
+                                    We are committed to offering products and services of the 
+                                    highest quality. We carefully select our suppliers and 
+                                    partners, ensuring that we deliver reliable and durable 
+                                    products that meet or exceed industry standards.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <!-- ==============testimonial starts here============== -->
+                <section class="text-center bg-info my-5 py-5 rounded">
+                    <div class="col-md-10 col-10 mx-auto">
+                        <!-- Carousel Wrapper -->
+                        <div id="carousel-example-1" class="carousel slide carousel-fade" data-ride="carousel"
+                            data-interval="false">
+                            <!--Slides-->
+                            <div class="carousel-inner">
+                                <!--First slide-->
+                                <div class="carousel-item active">
+                                    <div class="testimonial">
+                                        <!--Avatar-->
+                                        <div class="avatar mx-auto mb-4">
+                                            <img src="data:image/jpeg;base64,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" class="rounded-circle img-fluid"
+                                                alt="First sample avatar image">
+                                        </div>
+                                        <!--Content-->
+                                        <p>
+                                            <i class="fas fa-quote-left">
+                                            </i> 
+                                            Thank you for joining us on this journey, and we 
+                                            invite you to experience the vision and passion of 
+                                            our founder through the E-comm's products/services. 
+                                            Together, let's build a brighter future inspired by the remarkable 
+                                            achievements of Anna Deynah.
+                                        </p>
+                                        <h4 class="font-weight-bold">Meera Choudhary</h4>
+                                        <h6 class="font-weight-bold my-3">Student</h6>
+                                        <!--Review-->
+                                        <i class="fas fa-star blue-text"> </i>
+                                        <i class="fas fa-star blue-text"> </i>
+                                        <i class="fas fa-star blue-text"> </i>
+                                        <i class="fas fa-star blue-text"> </i>
+                                        <i class="fas fa-star-half-alt blue-text"> </i>
+                                    </div>
+                                </div>
+                                <!--First slide-->
+                                <!--Second slide-->
+                                <div class="carousel-item">
+                                    <div class="testimonial">
+                                        <!--Avatar-->
+                                        <div class="avatar mx-auto mb-4">
+                                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQsu34yqIKdjK5cAWEcuUq3ryD30iiqd2ArQ&usqp=CAU" class="rounded-circle img-fluid"
+                                                alt="Second sample avatar image">
+                                        </div>
+                                        <!--Content-->
+                                        <p>
+                                            <i class="fas fa-quote-left"></i> Wow what an awesome software package. Easy to use; easy to install; seamless match with Paypal. After a year still no issues. Even amazing considering I installed it and I’m not much of a web person. I love how it matches my web design and I can customize it with my pictures. </p>
+                                        <h4 class="font-weight-bold">Rohan Shukla</h4>
+                                        <h6 class="font-weight-bold my-3">Front end developer</h6>
+                                        <!--Review-->
+                                        <i class="fas fa-star blue-text"> </i>
+                                        <i class="fas fa-star blue-text"> </i>
+                                        <i class="fas fa-star blue-text"> </i>
+                                        <i class="fas fa-star blue-text"> </i>
+                                        <i class="fas fa-star blue-text"> </i>
+                                    </div>
+                                </div>
+                                <!--Second slide-->
+                                <!--Third slide-->
+                                <div class="carousel-item">
+                                    <div class="testimonial">
+                                        <!--Avatar-->
+                                        <div class="avatar mx-auto mb-4">
+                                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDWw8Vdm9JSAzsSu6MANcNR3pE0wZOISapEA&usqp=CAU"
+                                                alt="Third sample avatar image">
+                                        </div>
+                                        <!--Content-->
+                                        <p>
+                                            <i class="fas fa-quote-left"></i> I would like to tell you that I am extremely pleased with the template that I received from Ecommerce Templates! I have done a lot of research on templates and shopping carts and yours is by far superior! Not only is it a wonderful design, but it also is so simple to setup. And if I had any questions all I had to do was go to your website and I found the answer. I haven't had a need to post anything to your support forum, but from the posts I do see the response time from you all is unbelievable! Customer service plays a major part in my opinion. I would not hesitate to purchase again</p>
+                                        <h4 class="font-weight-bold">Saanvi Chavan</h4>
+                                        <h6 class="font-weight-bold my-3">Android Developer</h6>
+                                        <!--Review-->
+                                        <i class="fas fa-star blue-text"> </i>
+                                        <i class="fas fa-star blue-text"> </i>
+                                        <i class="fas fa-star blue-text"> </i>
+                                        <i class="fas fa-star blue-text"> </i>
+                                        <i class="far fa-star blue-text"> </i>
+                                    </div>
+                                </div>
+                                <!--Third slide-->
+                            </div>
+                            <!--Slides-->
+                            <!--Controls-->
+                            <a class="carousel-control-prev left carousel-control" href="#carousel-example-1"
+                                role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next right carousel-control" href="#carousel-example-1"
+                                role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                            <!--Controls-->
+                        </div>
+                        <!-- Carousel Wrapper -->
+                    </div>
+                </section>
+                <!-- ==============testimonial ends here============== -->
+            </div>
+            <div class="row mt-5">
+                <div class="col-md-3 col-6">
+                    <div class="border border-dark rounded shadow text-center p-3">
+                        <div class="mb-4">
+                            <i class="far fa-credit-card fa-3x"></i>
+                        </div>
+                        <div>
+                            <h5>Credit Card Support</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6 mt-small-2 mb-small-2">
+                    <div class="border border-primary rounded shadow text-center p-3">
+                        <div class="mb-4">
+                            <i class="fas fa-laptop fa-3x"></i>
+                        </div>
+                        <div>
+                            <h5>Online Order</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="border border-success rounded shadow text-center p-3">
+                        <div class="mb-4">
+                            <i class="fas fa-shipping-fast fa-3x"></i>
+                        </div>
+                        <div>
+                            <h5>Fast Delivery</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="border border-danger rounded shadow text-center p-3">
+                        <div class="mb-4">
+                            <i class="fas fa-gifts fa-3x"></i>
+                        </div>
+                        <div>
+                            <h5>Product with Gift</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==============about ends here============== -->
+
+    <!-- ==============footer starts here============== -->
+  <section class="footer_section pt-5 pb-2" id="footer_section">
+    <footer>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-3 col-6 pl-5 pl-small-15">
+            <div class="footer_title">
+              <a href="index.html"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMkAAABTCAMAAAAC5dMSAAAAM1BMVEX///8AAAA/Pz9/f3+/v7/v7+8PDw+fn5/f399fX18fHx/Pz88vLy+Pj49vb2+vr69PT0/y/mSPAAAE/UlEQVR4nO2bbbttIBCG9UYSe/3/X3v0PkWIrOVcl+fL3ixq7qkpTTRNdU3YSh0MGE/zH3vUuJ+G+tXeIIys1AFFSDHYo8b9RH9p4GHtkNzWJr7ei0oLtV5fktxkAPkCCbzA/o9fkry+QSIIISiQzEeku4tE1XVVh+OEKrFwbXe97kCCm8raItGqOwq/JAc09xhu/uMmKFz3c/2BV63uRpIv6yV5nl6S5+kleZ5ekufpJXmeXpIvaKDj/ORJjz5nHiEZcKyJdGlaZMJ5DSHDNWuEt1HwA1xCNqz7+IWg6P9qkYRlONCnA0u+zdUrDSsSJehjCc6DBScjbVyEiDArkyDUksBSQALqGeH5QDImHEpyNzl2gWRm8V2lgAT5vsIjix0J+6BV7TXLJRKEelZO0rqmjE22JEyijPpbSZAsJ0HTarFkBwShMWNfHRLrqSISZPq8WCPpt+raHMMuk5jiy0h0VSQ5qUn+NqtqWdbGGiSinERFL08HKLLSTqlI1sYaJHpQASQjTcSWJLNzF+zKyi46I8nf2EfAW41SSKIvolNUPI5J1vJxC/p+2Y1I0iStKYhFkbMR9GdI0uJZOQlaTn4zyQAv8O6HASVrk8RzAY1I+jT1zNdIliLxnA8cAjtivnudJeGxDYURnyEB7pHr9W/kks+SQNurkcBxAxogMufrkIDeW40EBE/k+9hr/wNJfFPQJ7rqISQiHrRiG3/TJifjBEdrkinrj8hiECf5Z/uzJHDs6kpI4KWCxSQ/GbvgfDIUzCcYTn806aNwDgTPvdBNWSPPzvEQpG0K5ngM7J3SaIvmeL/chf1xIwF0hiR57uoLSVweQj2PxCTxc5dpFTbBujaWwIUka+JNwbOwqsW6XlmakMRrFklGctuz8Ir0orEg4mdpN3+aJQlbyapA3bo+aXk5CRPOvQlJskBJJTZArpOY3lxGoko0PT4laTIpIqPNnNdVEhuChSRNb/8uSLZyK9sZr2skrSu8lISxDMkGyk7q7hIJ9jneUhKnJUnD1stq99LcF0hkZhq+SLKeF8a7mw9nSeQUhV9Vkob3CQs+sO9whCTZP+nJSNMZ6vD+yRTf1x3YP0mcdoXkRxpoRwhdOC2nB5MU6iV5nl6S5+kleZ5ekufpJXmeXpLn6RoJpUN0VPed/zJdIdHvLgm7CDKbqO6ImDQQRzYnaVZUwq2m1Hm3HlEfDDH/jQc1d5Cd1wjqkrj9X22STySE7M/HLCUBiX9lhYD6qL+U2lKlfu3g0OtpqyQyzYKuKjhKJdlw7/bNFVZPVF6Xe8tphwAJ1plHc6/O/w6BxJigr1RpyK6HjuWHDAvFHFTIX2PtSmrfi0J6M1MlF4knMftXjoRodmqd0Pq3nEyWgPoviEazWR9CLn3BZUPnSBDMCVKz+aDMSF+v8SRcdUBmnTD6QDAkrfBlS2PTV0nCAbVJW0Ci8iNCJnFiPmhWF3/cjvR8qxSwbIUmQLjfTiJN/JqvrRgyISpD7yIj6DPWGtMV3VAhnOF4iMrGcbgXkQzHgiqKeLXV9CHYZlSVdRNRHcNF/OyfqQEkvbuZ+Yr/HEkTxoYGfnSndTDilU7OZ9G463c+/ChMVPIXw4gPLsBzrW58Mp8I9nmS+2X2zVySm+seCmZGAo2CJMLgctt+hoTJH5LM1c+uDUccPLtw29KD7VIctLy7yfZVZm5joecOx9N1qf4BfrcvVuFxr/4AAAAASUVORK5CYII=" width="150px" class="img img-fluid" alt="logo"></a>
+            </div>
+            <div>
+              We pride ourselves on providing a diverse and extensive product catalog.
+            </div>
+          </div>
+          <div class="col-md-3 col-6">
+            <div class="footer_title pt-3 mb-3">
+              <h3>Quick Links</h3>
+            </div>
+            <div class="footer_links">
+              <ul>
+                <li><a href="about.html">About</a></li>
+                <li><a href="javascript:;">Offers & Discounts</a></li>
+                <li><a href="javascript:;">Get Coupon</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-3 col-6">
+            <div class="footer_title pt-3 mb-3">
+              <h3>New Products</h3>
+            </div>
+            <div class="footer_links">
+              <ul>
+                <li><a href="product_laptop.html">Latest Laptops</a></li>
+                <li><a href="product_phones.html">Latest Mobiles</a></li>
+                <li><a href="product_watches.html">Latest Watches</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-3 col-6">
+            <div class="footer_title pt-3 mb-3">
+              <h3>Support</h3>
+            </div>
+            <div class="footer_links">
+              <ul>
+                <li><a href="javascript:;">Frequently Asked Questions</a></li>
+                <li><a href="javascript:;">Terms & Conditions</a></li>
+                <li><a href="javascript:;">Report a Payment Issue</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="border-top">
+        <h6 class="text-center mt-3">Copyright ©2022 All rights reserved
+        </h6>
+      </div>
+    </footer>
+  </section>
+  <div class="backtop">
+    <a id="button" href="#top" class="btn btn-lg btn-outline-danger" role="button">
+      <i class="fas fa-chevron-up text-dark"></i>
+    </a>
+  </div>
+  <!-- ==============footer ends here============== -->
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
